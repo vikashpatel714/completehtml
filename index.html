@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        header,
+        nav,
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Basic Elements -->
+    <header>
+        <h1>HTML: From Basic to Advanced</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#basic">Basic HTML Tags</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#advanced">Advanced HTML5 Tags</a></li>
+        </ul>
+    </nav>
+
+    <article id="basic">
+        <h2>Basic HTML Tags</h2>
+        <p>This section covers basic tags like headings, paragraphs, lists, links, and images.</p>
+
+        <!-- Headings -->
+        <h1>Main Heading (h1)</h1>
+        <h2>Subheading (h2)</h2>
+        <h3>Smaller Heading (h3)</h3>
+
+        <!-- Paragraphs -->
+        <p>This is a <b>bold</b> word and this is an <i>italic</i> word.</p>
+        <p>This is another paragraph with a <span class="highlight">highlighted word</span>.</p>
+
+        <!-- Links -->
+        <p>Visit <a href="https://www.example.com">Example.com</a> for more information.</p>
+
+        <!-- Lists -->
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List Item 3</li>
+        </ol>
+
+        <!-- Image -->
+        <img src="https://via.placeholder.com/150" alt="Sample Image" width="150">
+
+        <!-- Tables -->
+        <h2>Table Example</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>22</td>
+            </tr>
+        </table>
+
+    </article>
+
+    <article id="forms">
+        <h2>HTML Forms</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <br><br>
+
+            <label for="hobbies">Choose your hobbies:</label>
+            <select id="hobbies" name="hobbies[]" multiple>
+                <option value="coding">Coding</option>
+                <option value="music">Music</option>
+                <option value="sports">Sports</option>
+            </select>
+            <br><br>
+
+            <label for="agree">Agree to Terms:</label>
+            <input type="checkbox" id="agree" name="agree" value="yes"> I agree
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </article>
+
+    <article id="media">
+        <h2>Media Elements</h2>
+
+        <!-- Audio -->
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="audio_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video -->
+        <h3>Video Example</h3>
+        <video width="400" controls>
+            <source src="video_example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Embed -->
+        <h3>Embed Example</h3>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+
+    </article>
+
+    <article id="advanced">
+        <h2>Advanced HTML5 Tags</h2>
+
+        <!-- Semantic Elements -->
+        <section>
+            <h3>Section Element</h3>
+            <p>The <code>&lt;section&gt;</code> element defines a section in a document.</p>
+        </section>
+
+        <article>
+            <h3>Article Element</h3>
+            <p>The <code>&lt;article&gt;</code> element specifies independent, self-contained content.</p>
+        </article>
+
+        <aside>
+            <h3>Aside Element</h3>
+            <p>The <code>&lt;aside&gt;</code> element contains content that is tangentially related to the content around it.</p>
+        </aside>
+
+        <!-- Progress Element -->
+        <h3>Progress Element</h3>
+        <p>Download progress: <progress value="50" max="100"></progress></p>
+
+        <!-- Details and Summary -->
+        <h3>Details and Summary</h3>
+        <details>
+            <summary>Click to see more details</summary>
+            <p>This is the hidden content that is shown when you click the summary above.</p>
+        </details>
+
+        <!-- Canvas -->
+        <h3>Canvas Element</h3>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            // Example canvas drawing
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'green';
+            ctx.fillRect(10, 10, 150, 75);
+        </script>
+
+    </article>
+
+    <footer>
+        <p>Footer Information &copy; 2024</p>
+    </footer>
+
+</body>
+
+</html>
